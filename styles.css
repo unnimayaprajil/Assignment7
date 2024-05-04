@@ -7,10 +7,50 @@
    
 }
 :root{
-    --vh-60:60vh;
-    --vh-40:40vh;
+    --bg-primary:#260b6e;
 }
+.bg-light{
+    background-color: rgb(214, 226, 231);
+}
+.my-button {
+    background-color:var(--bg-primary);
+    color: #fff;
+}
+.info {
+    display: inline-block;   
+}
+.info a{
+    color:#fff
+}
+
 .banner .row{
     height :var(--vh-60);
     color:white;
 }
+/* media query */
+@media screen and (max-width:576px){
+          
+    .banner-img{
+        display:none
+    }
+    .info{
+        font-size: 1.1rem;
+    }
+    .banner-info{
+        text-align: center;
+    }
+    .banner-info .btn{
+        width:100%;
+        margin-top: 4px;
+    }
+    }
+   
+@media screen and (min-width:576px) and (max-width:768px){       
+    .banner-img{
+        display:none
+    } 
+    .banner-info{
+        text-align: center;
+    }
+    }
+   
